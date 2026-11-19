@@ -1,0 +1,12 @@
+id,descripcion,usuario,clave,resultado,mensaje
+TC01,Login exitoso con usuario estandar,standard_user,secret_sauce,INVENTARIO,""
+TC02,Usuario vacio,"",secret_sauce,ERROR,Epic sadface: Username is required
+TC03,Contrasena vacia,standard_user,"",ERROR,Epic sadface: Password is required
+TC04,Usuario y contrasena vacios,"","",ERROR,Epic sadface: Username is required
+TC05,Usuario bloqueado,locked_out_user,secret_sauce,ERROR,"Epic sadface: Sorry, this user has been locked out."
+TC06,Contrasena incorrecta,standard_user,secret_sauc,ERROR,Epic sadface: Username and password do not match any user in this service
+TC07,Usuario inexistente,usuario_falso,secret_sauce,ERROR,Epic sadface: Username and password do not match any user in this service
+TC08,Usuario con mayusculas (sensible a mayusculas),Standard_User,secret_sauce,ERROR,Epic sadface: Username and password do not match any user in this service
+TC09a,Login exitoso problem_user,problem_user,secret_sauce,INVENTARIO,""
+TC09b,Login exitoso error_user,error_user,secret_sauce,INVENTARIO,""
+TC09c,Login exitoso visual_user,visual_user,secret_sauce,INVENTARIO,""
